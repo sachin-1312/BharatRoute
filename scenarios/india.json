@@ -1,0 +1,38 @@
+{
+  "name": "India to Singapore (illustrative)",
+  "seed": 42,
+  "notes": "All latencies are ILLUSTRATIVE placeholders, not real measurements. Replace with live-mode data.",
+  "nodes": [
+    { "id": 1, "name": "LDH", "label": "Ludhiana",  "region": "IN-PB", "role": "edge",  "pos": {"x": 0.30, "y": 0.16} },
+    { "id": 2, "name": "DEL", "label": "Delhi",     "region": "IN-DL", "role": "relay", "pos": {"x": 0.34, "y": 0.28} },
+    { "id": 3, "name": "BOM", "label": "Mumbai",    "region": "IN-MH", "role": "relay", "pos": {"x": 0.26, "y": 0.56} },
+    { "id": 4, "name": "MAA", "label": "Chennai",   "region": "IN-TN", "role": "relay", "pos": {"x": 0.44, "y": 0.78} },
+    { "id": 5, "name": "HYD", "label": "Hyderabad", "region": "IN-TG", "role": "relay", "pos": {"x": 0.38, "y": 0.64} },
+    { "id": 8, "name": "BLR", "label": "Bangalore", "region": "IN-KA", "role": "relay", "pos": {"x": 0.40, "y": 0.74} },
+    { "id": 6, "name": "SIN", "label": "Singapore", "region": "SG",    "role": "exit",  "pos": {"x": 0.86, "y": 0.80} },
+    { "id": 7, "name": "FRA", "label": "Frankfurt", "region": "DE",    "role": "exit",  "pos": {"x": 0.08, "y": 0.10} }
+  ],
+  "links": [
+    { "a": "LDH", "b": "SIN", "rtt_ms": 102, "jitter_ms": 4, "loss_pct": 0.6 },
+    { "a": "LDH", "b": "DEL", "rtt_ms": 8,   "jitter_ms": 1, "loss_pct": 0   },
+    { "a": "LDH", "b": "BOM", "rtt_ms": 21,  "jitter_ms": 1, "loss_pct": 0.2 },
+    { "a": "LDH", "b": "MAA", "rtt_ms": 28,  "jitter_ms": 1, "loss_pct": 0.1 },
+    { "a": "LDH", "b": "HYD", "rtt_ms": 35,  "jitter_ms": 2, "loss_pct": 0   },
+    { "a": "LDH", "b": "BLR", "rtt_ms": 44,  "jitter_ms": 2, "loss_pct": 0   },
+    { "a": "DEL", "b": "BOM", "rtt_ms": 26,  "jitter_ms": 2, "loss_pct": 0   },
+    { "a": "DEL", "b": "SIN", "rtt_ms": 115, "jitter_ms": 4, "loss_pct": 0   },
+    { "a": "BOM", "b": "SIN", "rtt_ms": 42,  "jitter_ms": 2, "loss_pct": 0.3 },
+    { "a": "BOM", "b": "MAA", "rtt_ms": 22,  "jitter_ms": 1, "loss_pct": 0   },
+    { "a": "BOM", "b": "BLR", "rtt_ms": 18,  "jitter_ms": 1, "loss_pct": 0   },
+    { "a": "MAA", "b": "SIN", "rtt_ms": 36,  "jitter_ms": 2, "loss_pct": 0.2 },
+    { "a": "BLR", "b": "SIN", "rtt_ms": 78,  "jitter_ms": 3, "loss_pct": 0.4 },
+    { "a": "BLR", "b": "MAA", "rtt_ms": 7,   "jitter_ms": 1, "loss_pct": 0.1 },
+    { "a": "BLR", "b": "HYD", "rtt_ms": 14,  "jitter_ms": 1, "loss_pct": 0   },
+    { "a": "HYD", "b": "SIN", "rtt_ms": 52,  "jitter_ms": 3, "loss_pct": 0   },
+    { "a": "HYD", "b": "MAA", "rtt_ms": 14,  "jitter_ms": 1, "loss_pct": 0   },
+    { "a": "LDH", "b": "FRA", "rtt_ms": 180, "jitter_ms": 8, "loss_pct": 0.5 },
+    { "a": "BOM", "b": "FRA", "rtt_ms": 96,  "jitter_ms": 3, "loss_pct": 0   },
+    { "a": "DEL", "b": "FRA", "rtt_ms": 140, "jitter_ms": 5, "loss_pct": 0   }
+  ],
+  "timeline": []
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Small 4-node test scenario",
+  "seed": 1,
+  "notes": "Minimal scenario for unit/integration tests.",
+  "nodes": [
+    { "id": 1, "name": "A", "label": "Node A", "region": "TEST", "role": "edge",  "pos": {"x": 0.1, "y": 0.5} },
+    { "id": 2, "name": "B", "label": "Node B", "region": "TEST", "role": "relay", "pos": {"x": 0.4, "y": 0.3} },
+    { "id": 3, "name": "C", "label": "Node C", "region": "TEST", "role": "relay", "pos": {"x": 0.4, "y": 0.7} },
+    { "id": 4, "name": "D", "label": "Node D", "region": "TEST", "role": "exit",  "pos": {"x": 0.9, "y": 0.5} }
+  ],
+  "links": [
+    { "a": "A", "b": "D", "rtt_ms": 100, "jitter_ms": 2, "loss_pct": 0 },
+    { "a": "A", "b": "B", "rtt_ms": 20,  "jitter_ms": 1, "loss_pct": 0 },
+    { "a": "A", "b": "C", "rtt_ms": 25,  "jitter_ms": 1, "loss_pct": 0 },
+    { "a": "B", "b": "D", "rtt_ms": 30,  "jitter_ms": 1, "loss_pct": 0 },
+    { "a": "C", "b": "D", "rtt_ms": 40,  "jitter_ms": 1, "loss_pct": 0 }
+  ],
+  "timeline": []
+}

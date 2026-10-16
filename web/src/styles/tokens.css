@@ -1,0 +1,58 @@
+:root {
+  /* Colors */
+  --color-primary: #ff4f00;
+  --color-primary-hover: #e64700;
+  --color-on-primary: #fffefb;
+  --color-ink: #201515;
+  --color-ink-soft: #2f2a26;
+  --color-ink-mid: #36342e;
+  --color-body: #605d52;
+  --color-body-mid: #939084;
+  --color-mute: #c5c0b1;
+  --color-canvas: #fffefb;
+  --color-canvas-soft: #f8f4f0;
+
+  /* Radius */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-pill: 9999px;
+
+  /* Spacing (4 px base) */
+  --space-xxs: 2px;  --space-xs: 4px;   --space-sm: 8px;   --space-md: 12px;
+  --space-lg: 16px;  --space-xl: 24px;  --space-2xl: 32px; --space-3xl: 48px; --space-4xl: 64px;
+
+  /* Shadows: only for modal and toast, warm-tinted */
+  --shadow-toast: 0 4px 12px rgba(32, 21, 21, 0.10);
+  --shadow-modal: 0 8px 24px rgba(32, 21, 21, 0.12);
+
+  /* Fonts */
+  --font-display: "Degular Display", "Inter", system-ui, -apple-system, sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+html {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+}
+
+body {
+  margin: 0;
+  font-size: 18px;
+  line-height: 27px;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation: none !important;
+    transition: none !important;
+  }
+}
